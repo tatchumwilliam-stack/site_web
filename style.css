@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #0f0f1a;
+    color: #f8f8f2;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+.navbar {
+    background: #1a1a2e;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(red, green, blue, alpha);
+}
+a {
+    text-decoration: none;
+}
+.logo {
+    font-size: 30px;
+    color: #ffd700;font-weight: bold;
+}
+.navbar ul a {
+    color: #ffd700;
+}
+#hero {
+    min-height: 50vh;
+    text-align: center;
+    padding: 100px 40px 60px;
+    background: linear-gradient(#0f0f1a, #241c00);
+}
+.hero-tag {
+    color: rgba(122, 104, 1, 0.999);
+    border-radius: 12px;
+    border:1px solid rgba(101, 86, 1, 0.999);
+    display: inline-block;
+    padding: 2px 10px;
+}
+.btn {
+    background: #ffd700;
+    color: #0f0f1a;
+    padding: 12px 30px;
+    border-radius: 12px;
+}
+h1 {
+    color: #ffd700;
+}
+p{
+    color: rgba(122, 104, 1, 0.999);
+}
+ul {
+    color: rgba(122, 104, 1, 0.999);
+}
+.btn-2 {
+     color: rgba(122, 104, 1, 0.999);
+    border-radius: 12px;
+    border:1px solid rgba(101, 86, 1, 0.999);
+    display: inline-block;
+    padding: 12px 30px;
+}
+.card {
+     color: #ffd700;
+    border-radius: 12px;
+    border:1px solid rgba(101, 86, 1, 0.999);
+    display: inline-block;
+    padding: 12px 30px;
+    text-align: center;
+    background: #1e1e2e;
+    flex: 1;
+}
+span {
+     color: rgba(122, 104, 1, 0.999);
+    border-radius: 6px;
+    border:1px solid rgba(255,215,0,0.2);
+    display: inline-block;
+    padding: 1px 3px;
+    float: right;
+    margin-top: 0;
+    margin-right: 0;
+}
+.ligne-2 {
+    color: #262669;
+}
+#services-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding-right: 150px;
+    padding-left: 150px;
+    padding-bottom: 100px;
+}
+i {
+    color: #ffd700;
+}
+em {
+    color:  rgba(122, 104, 1, 0.999);
+}
+.cfe {
+    float: left;
+    height: 60px;text-align: center;
+}
+#services {
+    height: 100px;
+}
+.nav-link {
+    padding-bottom: 3px;
+}
