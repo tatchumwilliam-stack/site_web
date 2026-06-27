@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solenn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div>
+            <img src="logo.png" alt="logo"></img>
+        </div>
+            <button id="reserver">Réserver</button>
+    </header>
+    <section id="home">
+        <div class="carrousel">
+            <img class="slid-items active" src="ndole.png.png" alt="photo">
+            </img>
+            <img class="slid-items" src="saute.png.webp" alt="photo">
+            </img>
+            <img class="slid-items" src="salade.png.jpg" alt="photo">
+            </img>
+        </div>
+        <p>Chez SOLENN, chaaque assiette est une cérémonie. Nous réveillons les saveur profondes
+            de nos traadition Africaines pour les vêtir de finesse contemporaine. Ici, le goût n'est 
+            pas pressé. Il est célébré. Bienvenu dans la solannité du goût 
+        </p>
+         <nav>
+                <ul>
+                    <li>HOME</li>
+                    <li>MENU</li>
+                    <li>SALLE</li>
+                    <li>TÉMOIGNAGES</li>
+                    <li>CONTACT</li>
+                </ul>
+            </nav>
+    </section>
+    <section id="menu">
+        <h2>Decouvrez nos different Menu</h2>
+        <div class="card_list">
+            <ul>
+                <li>ENTRER</li>
+                <li>TERRE</li>
+                <li>EAU</li>
+                <li>FEU</li>
+                <li>DOUCEURS SOLANNELLES</li>
+                <li>ACCORDS</li>
+            </ul>
+        </div>
+        <div class="menu_card">
+        <div class="card">
+            <h5>ENTRER</h5>
+            <p>Le Soufle pour eveiller sans alourdir</p>
+            <img src="entre 1.webp" alt="photo">
+            <img src="entre 2.jpg" alt="photo">
+            <img src="enter 3.jpg" alt="photo">
+            <img src="entre 4.webp" alt="photo">
+        </div>
+        <div class="card">
+            <h5>TERRE</h5>
+            <p>Nos racines, sublimees</p>
+                <img src="tere 1.png" alt="photo">
+                <img src="tere 2.webp" alt="photo">
+                <img src="tere 4.jpg" alt="photo">
+                <img src="tere 4.png" alt="photo">
+        </div>
+        <div class="card">
+            <h5>EAU</h5>
+            <p>Le frais, Cuissons juste,sauces legeres</p>
+            <img src="eau1.webp" alt="photo">
+            <img src="eau2.webp" alt="photo">
+            <img src="eau3.jpg" alt="photo">
+            <img src="eau4.webp" alt="photo">
+        </div>
+        <div class="card">
+            <h5>FEU</h5>
+            <p>Puissance, la force de SOLENN</p>
+            <img src="feu1.webp" alt="photo">
+            <img src="feu2.jpg" alt="photo">
+            <img src="feu3.jpg" alt="photo">
+            <img src="feu4.jpg" alt="photo">
+            
+        </div>
+        <div class="card">
+            <h5>DOUCEURS SOLANNELLES</h5>
+            <p></p>
+            <img src="douce1.jpg" alt="photo">
+            <img src="douce2.webp" alt="photo">
+            <img src="douce3.jpg" alt="photo">
+            <img src="douce4.webp" alt="photo">
+
+        </div>
+        <div class="card">
+            <h5>ACCORDS</h5>
+            <p></p>
+            <img src="acc1.jpg" alt="">
+            <img src="acc2.jpg" alt="">
+            <img src="acc4.webp" alt="">
+            <img src="acc3.jpg" alt="">
+        </div>
+        </div>
+    </section>
+    <section id="salle">
+        <p>La salle de SOLENN vous enveloppe. c'set votre salle.
+            Celle des diners qui durent, des rires discrets, des 
+            regards qui se croisent. Une salle humaine, ou le service
+            prend le temps. Comme a la maison, si la maison etait un 
+            lieu d'exception.
+        </p>
+        <div class="img_de_salle">
+            <img src="salle1.jpg" alt="photo">
+            <img src="salle2.jpg" alt="photo">
+            <img src="salle3.jpg" alt="photo">
+        </div>
+    </section>
+    <section id="temoignages">
+        <div class="card_2"></div>
+        <div class="card_2"></div>
+        <div class="card_2"></div>
+        <div class="card_2"></div>
+    </section>
+    <section id="Contact">
+        <h4>Nous sommes disponible aux</h4>
+        <p>Email: tatchumwilliam@icloud.com</p>
+        <p>Tel: +237657339416</p>
+    </section>
+    <footer>
+        &copy; TPblackdev 2026
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const slides = document.querySelectorAll(".slid-items");
+            let currentSlide = 0;
+            const slideInterval = 5000;
+
+            function nextSlide() {eu
+
+                //    masquer l'image actuel
+                slides[currentSlide].classList.remove("active");
+
+                //   passer a l'image suivant (revenir a 0 si on arrive a la fin)
+                currentSlide = (currentSlide + 1) % slides.length;
+
+                //afficher la nouvelle image
+                slides[currentSlide].classList.add("active");
+            }
+
+            //    Demarer le defile ment automatique
+            setInterval(nextSlide, slideInterval);
+        });
+    </script>
+</body>
+</html>
