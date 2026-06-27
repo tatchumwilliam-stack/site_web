@@ -7,6 +7,7 @@
 }
 body {
     font-family: cursive;
+    object-fit: cover;
 }
 li {
     list-style-type: none;
@@ -77,10 +78,11 @@ nav ul li:hover {
 }
 .slid-items{
     position: absolute;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     flex-shrink: 0;
-    transition: opacity 0.8s ease-in-out ;
+    transition: opacity 0.8s ease-in-out;
     opacity: 0;
 }
 .slid-items.active {
@@ -158,4 +160,51 @@ h5 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+                                  /* SALE */
+#salle p {
+    color: var(--primarycolor);
+    text-align: center;
+    padding: 30px 20px;
+}
+.img_de_salle {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 30px;
+}  
+#salle img {
+    box-shadow:3px 3px 4px var(--primarycolor);
+    height: 300px;
+    border: solid 3px var(--primarycolor);
+    border-radius: 10px;
+} 
+.tous-card-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+.card_2 {
+    background-color: var(--primarycolor);
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px var(--primarycolor);
+    border: 3px solid var(--primarycolor);
+}
+#back-ground {
+    background-image: url(logo.png);
+    background-size: cover;
+}
+h2 {
+    color: var(--primarycolor);
+    margin: 30px 20px;
+}
+#contact {
+    color: #ffffff;
+    background-color: #ffffff;
 }
