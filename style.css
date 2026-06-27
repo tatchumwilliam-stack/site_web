@@ -182,7 +182,7 @@ h5 {
 }  
 #salle img {
     box-shadow:3px 3px 4px var(--primarycolor);
-    height: 300px;
+    height: 275px;
     border: solid 3px var(--primarycolor);
     border-radius: 10px;
 } 
