@@ -111,6 +111,12 @@ nav ul li:hover {
     top: 150px;
     margin-bottom: 10px;
 }
+.card_list p {
+    background-color: var(--primarycolor);
+    margin: 0 30px;
+    border-radius: 50px;
+    text-align: center;
+}
 .card_list ul li{
     background-color: var(--primarycolor);
     padding: 8px 15px;
@@ -201,8 +207,13 @@ h5 {
     background-size: cover;
 }
 h2 {
-    color: var(--primarycolor);
-    margin: 30px 20px;
+    background-color: var(--primarycolor);
+    padding-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #000000;
+    max-width: 500px;
+    border-radius: 50px;
 }
 #contact {
     color: #ffffff;
