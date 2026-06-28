@@ -182,7 +182,7 @@ h5 {
 }  
 #salle img {
     box-shadow:3px 3px 4px var(--primarycolor);
-    height: 275px;
+    height: 250px;
     border: solid 3px var(--primarycolor);
     border-radius: 10px;
 } 
@@ -195,8 +195,9 @@ h5 {
 }
 .card_2 {
     background-color: var(--primarycolor);
-    text-align: center;
-    height: 200px;
+    padding: 10px;
+    text-align: left;
+    height: 220px;
     width: 200px;
     border-radius: 10px;
     box-shadow: 3px 3px 4px var(--primarycolor);
@@ -216,6 +217,64 @@ h2 {
     border-radius: 50px;
 }
 #contact {
-    color: #ffffff;
-    background-color: #ffffff;
+    color: var(--primarycolor);
+    background-color: #000000;
+    padding: 40px;
+}
+h3 {
+    font-weight: bold;
+    text-align: center;
+}
+h4 {
+    color: #000000;
+    background-color: var(--primarycolor);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    padding: 20px 30px;
+}
+i {
+    color: var(--primarycolor);
+}
+footer {
+    background-color: #000000;
+    text-align: center;
+    color: var(--primarycolor);
+    padding-bottom: 30px;
+}
+#toggle-btn {
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    top: 145px;
+    right: 30px;
+    float: right;
+    padding-right: 20px;
+    cursor: pointer;
+}
+#toggle-btn:hover {
+    transform: scale(1.5);
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+@media screen and (max-width: 900px){
+	#toggle-btn{ display: block }
+    nav ul{
+        opacity: 0;
+        flex-direction: column;
+        width: 250px;
+        padding: 0;
+        top: 30px;
+        left: calc(50% - 125px);
+    }
+    .un, .deux{ grid-column: span 2; }
+}
+
+@media screen and (min-width: 901px){
+    nav ul{ opacity: 1 !important; }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>solenn</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
 <body>
     <header id="header">
@@ -13,6 +14,9 @@
         </div>
             <button id="reserver">Réserver</button>
     </header>
+    <div id="toggle-btn">
+					<i class="fa-solid fa-bars fa-xl"></i>
+				</div>
     <section id="home">
         <div class="carrousel">
             <img class="slid-items active" src="ndole.png.png" alt="photo">
@@ -27,12 +31,13 @@
             pas pressé. Il est célébré. Bienvenu dans la solannité du goût 
         </p>
          <nav>
-                <ul>
-                    <li>HOME</li>
-                    <li>MENU</li>
-                    <li>SALLE</li>
-                    <li>TÉMOIGNAGES</li>
-                    <li>CONTACT</li>
+            
+                <ul id="ulref">
+                    <li><a href="#home">ACCUEIL</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#salle">SALLE</a></li>
+                    <li><a href="#temoignages">TÉMOIGNAGES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
     </section>
@@ -41,14 +46,6 @@
         <div class="card_list">
             <p>Nous vous proposons les menu<br>
             ENTRER - TERRE - EAU - FEU - DOUCEURS - ACCORDS</p>
-<!--            <ul>
-                <li>ENTRER</li>
-                <li>TERRE</li>
-                <li>EAU</li>
-                <li>FEU</li>
-                <li>DOUCEURS SOLANNELLES</li>
-                <li>ACCORDS</li>
-            </ul>-->
         </div>
         <div class="menu_card">
         <div class="card">
@@ -86,7 +83,7 @@
         </div>
         <div class="card">
             <h5>DOUCEURS SOLANNELLES</h5>
-            <p></p>
+            <p>La dernière note. Desserts signature</p>
             <img src="douce1.jpg" alt="photo">
             <img src="douce2.webp" alt="photo">
             <img src="douce3.jpg" alt="photo">
@@ -95,7 +92,7 @@
         </div>
         <div class="card">
             <h5>ACCORDS</h5>
-            <p></p>
+            <p>Pour accompagner le voyage</p>
             <img src="acc1.jpg" alt="">
             <img src="acc2.jpg" alt="">
             <img src="acc4.webp" alt="">
@@ -121,37 +118,49 @@
         <h2>CE QUE NOS CLIENTS PENSENT</h2>
         <div class="tous-card-2">
         <div class="card_2">
-            "Dès l’accueil, on se sent attendu et choyé. Le chef et son équipe transforment
+            <h3>HUGO R.</h3>
+            <p>"Dès l’accueil, on se sent attendu et choyé. Le chef et son équipe transforment
              un repas en un moment d’exception. Un lieu où l’on savoure autant l’assiette
-              que l’atmosphère." — Hugo R.
+              que l’atmosphère."</p>
         </div>
         <div class="card_2">
-            "Des arômes délicats, des textures surprenantes, et une présentation digne d’un
+            <h3>ISABELLE P.</h3>
+            <p>"Des arômes délicats, des textures surprenantes, et une présentation digne d’un
              musée. On ferme les yeux, et on voyage. Bravo au chef pour cette symphonie
-              de saveurs." — Isabelle P.
+              de saveurs."</p>
         </div>
         <div class="card_2">
-            "On hésite presque à partager cette adresse tant elle est précieuse. Ici, tout
+            <h3>THOMAS & ELODIE</h3>
+            <p>"On hésite presque à partager cette adresse tant elle est précieuse. Ici, tout
              est juste : la finesse des plats, la chaleur du service, la beauté du lieu.
-              Un secret bien gardé." — Thomas & Élodie
+              Un secret bien gardé."</p>
         </div>
         <div class="card_2">
-            "Un dîner ici, c’est comme feuilleter un livre de poésie culinaire. Chaque
+            <h3>SOPHIE L.</h3>
+            <p>"Un dîner ici, c’est comme feuilleter un livre de poésie culinaire. Chaque
              plat est une page qui surprend et émerveille. Nous avons déjà réservé pour
-              notre prochaine visite !" — Sophie L.
+              notre prochaine visite !"</p>
         </div>
         </div>
     </section>
-    <section id="Contact">
+    </section>
+    <section id="contact">
         <h4>Nous sommes disponible aux</h4>
-        <p>Email: tatchumwilliam@icloud.com</p>
-        <p>Tel: +237657339416</p>
+        <p><i class="fa-solid fa-envelope"></i>&nbsp;Email: tatchumwilliam@icloud.com</p>
+        <p> <i class="fa-solid fa-phone"></i>&nbsp;Tel: +237657339416</p>
     </section>
-    </section>
+    
     <footer>
-        &copy; TPblackdev 2026
+        &copy; SOLENN. 2026
     </footer>
     <script>
+        //                       AMBORGER 
+        const btn = document.querySelector('#toggle-btn');
+			const ul  = document.getElementById('ulref');
+
+			btn.onclick = ()=> ul.style.opacity == 0 ? ul.style.opacity = 1 : ul.style.opacity = 0;
+
+            //               CARROUSEL
         document.addEventListener("DOMContentLoaded", () => {
             const slides = document.querySelectorAll(".slid-items");
             let currentSlide = 0;
